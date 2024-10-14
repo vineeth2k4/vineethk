@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Vineeth Kamath - Photography Portfolio</title>
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .roboto-thin {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .roboto-light {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .roboto-black {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .roboto-thin-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+        .roboto-light-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .roboto-regular-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .roboto-medium-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .roboto-bold-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .roboto-black-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+
+
+
+
+        body {
+            font-family:'Lucida Sans';
+            margin: 0;
+            background-color: #0C0E0E;
+            color: #FBF1E1;
+            justify-content: center;
+            align-items: center;
+        }
+        header {
+            padding: 30px 100px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #FBF1E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .menu a.active {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #FBF1E1;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .container {
+            max-width: 1440px;
+            margin: 0 100px;
+            padding: 10px;
+        }
+
+
+
+
+
+        * {
+	        margin: 0;
+	        padding: 0;
+        }
+        
+
+
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .container .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            margin: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .container .card .content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.5s;
+        }
+
+        .container .card:hover .content {
+            transform: translateY(-20px);
+        }
+
+        .container .card .content .imgBx {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .container .card .content .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container .card .content .contentBx h3 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0 10px;
+            line-height: 1.1em;
+        }
+
+        .container .card .content .contentBx h3 span {
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: initial;
+        }
+
+        .container .card .sci {
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+        }
+
+        .container .card .sci li {
+            list-style: none;
+            margin: 0 10px;
+            transform: translateY(40px);
+            transition: 0.5s;
+            opacity: 0;
+        }
+
+        .container .card:hover .sci li {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        .container .card .sci li a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vineeth Kamath</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="index.html">About</a>
+                <a href="ADC_ISA-2_PROJECTS_PAGE.html">Projects</a>
+                <a href="ADC_ISA-2_PHOTOGRAPHY_PAGE.html" class="active">Photography</a>
+                <a href="ADC_ISA-2_CONTACT_PAGE.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E" alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <section>
+        <div class="container">
+
+            <div class="card">
+                <div class="content">
+
+                    <div class="imgBx">
+                        <img src="https://image.flaticon.com/icons/png/256/4213/4213732.png">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Lion<br><span>Happy Birthday</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="https://image.flaticon.com/icons/png/256/4213/4213736.png">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Frog<br><span>Happy Birthday</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="https://image.flaticon.com/icons/png/256/4213/4213641.png">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Giraffe<br><span>Happy Birthday</span></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>

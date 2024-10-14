@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineeth Kamath - Photography Portfolio</title>
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .roboto-thin {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .roboto-light {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .roboto-black {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .roboto-thin-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+        .roboto-light-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .roboto-regular-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .roboto-medium-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .roboto-bold-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .roboto-black-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+
+
+        body {
+            font-family:'Lucida Sans';
+            margin: 0;
+            padding: 0;
+            background-color: #0C0E0E;
+            color: #FBF1E1;
+        }
+        header {
+            padding: 30px 100px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #FBF1E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .menu a.active {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #FBF1E1;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+
+        
+        .container {
+            max-width: 1440px;
+            margin: 0 100px;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+            margin-top: 50px;
+        }
+        .text-content {
+            flex: 1;
+            padding-right: 30px;
+            padding-left: 30px;
+            color: #FBF1E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 30px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .subscribe-form {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .subscribe-form input[type="email"] {
+            flex-grow: 1;
+            padding: 10px 15px;
+            border: 1px solid #333;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 7px
+        }
+        .subscribe-form input[type="email"]::placeholder {
+            color: #666;
+        }
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #f0e6d9;
+            color: #0f0f0f;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 7px;
+        }
+        .subscribe-form button:hover {
+            background-color: #e0d6c9;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+
+
+
+
+        .social-icons-icons {
+            display: flex;
+            gap: 30px;
+        }
+        .social-icons-icons img {
+            width: 50px;
+            height: 50px;
+        }
+
+        
+        .content {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .info {
+            flex: 1;
+            padding-right: 40px;
+            
+        }
+
+        .form {
+            flex: 2;
+            margin-right: 20px;
+            
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 20px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            color: #ffffff;
+            height: 30px;
+            border-radius: 10px;
+        }
+        
+        textarea {
+            grid-column: 1 / -1;
+            resize:none;
+            min-height: 200px;
+            border-radius: 10px;
+        }
+
+        ::placeholder {
+            color: #666666;
+            font-size: 1.3em;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f0e6d9;
+            color: #0f0f0f;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+            grid-column: 1 / -1;
+            
+        }
+
+        button:hover {
+            background-color: #e0d6c9;
+        }
+
+
+
+        .background-section {
+            background-image: url('https://i.ibb.co/yP3NwSJ/Background-Image.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment:scroll;
+            position: relative;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vineeth Kamath</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="index.html">About</a>
+                <a href="ADC_ISA-2_PROJECTS_PAGE.html">Projects</a>
+                <a href="ADC_ISA-2_PHOTOGRAPHY_PAGE.html">Photography</a>
+                <a href="ADC_ISA-2_CONTACT_PAGE.html" class="active">Contact</a>
+            </div>
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E" alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+
+
+</br>
+</br>
+
+    <div class="container">
+        <h1>Want to work together?</h1>
+        <h2>Subscribe for updates!</h2>
+    </br>
+    </br>
+
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+
+</br>
+</br>
+</br>
+</br>
+    <div class="background-section">
+    </br>
+        <div class="container">
+            <div class="content">
+                <div class="info">
+                    <p>I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope of your project, your timelines, and your budget.</p>
+                    <div class="social-icons-icons">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E" alt="Behance">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn">
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Reddit%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%23f40%22%20rx%3D%2215%25%22%2F%3E%3Cg%20fill%3D%22%23fff%22%3E%3Cellipse%20cx%3D%22256%22%20cy%3D%22307%22%20rx%3D%22166%22%20ry%3D%22117%22%2F%3E%3Ccircle%20cx%3D%22106%22%20cy%3D%22256%22%20r%3D%2242%22%2F%3E%3Ccircle%20cx%3D%22407%22%20cy%3D%22256%22%20r%3D%2242%22%2F%3E%3Ccircle%20cx%3D%22375%22%20cy%3D%22114%22%20r%3D%2232%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22%23fff%22%20stroke-width%3D%2216%22%20d%3D%22m256%20196%2023-101%2073%2015%22%2F%3E%3Cpath%20stroke%3D%22%23f40%22%20stroke-width%3D%2213%22%20d%3D%22m191%20359c33%2025%2097%2026%20130%200%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23f40%22%3E%3Ccircle%20cx%3D%22191%22%20cy%3D%22287%22%20r%3D%2231%22%2F%3E%3Ccircle%20cx%3D%22321%22%20cy%3D%22287%22%20r%3D%2231%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Reddit">
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-name%3D%22Layer%201%22%20viewBox%3D%220%200%20120%20120%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%2226.206%22%20x2%3D%22146.207%22%20y1%3D%22-1059.782%22%20y2%3D%22-1059.782%22%20gradientTransform%3D%22rotate(90%20-486.788%20-512.994)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%231d6ff2%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231ac8fc%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22url(%23a)%22%20fill-rule%3D%22evenodd%22%20d%3D%22M0%2C94V26A25.94821%2C25.94821%2C0%2C0%2C1%2C26%2C0H94a25.94821%2C25.94821%2C0%2C0%2C1%2C26%2C26V94a25.94821%2C25.94821%2C0%2C0%2C1-26%2C26H26A26.012%2C26.012%2C0%2C0%2C1%2C0%2C94Z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%20d%3D%22M99%2C86.2a6.10894%2C6.10894%2C0%2C0%2C1-3%2C.8H24a5.83049%2C5.83049%2C0%2C0%2C1-3-.8l24-24%2C5.9%2C5.9A12.219%2C12.219%2C0%2C0%2C0%2C60%2C71.5a12.37426%2C12.37426%2C0%2C0%2C0%2C9.1-3.4L75%2C62.2Zm2.1-2.2-24-24%2C24-24a6.10893%2C6.10893%2C0%2C0%2C1%2C.8%2C3V81A4.55088%2C4.55088%2C0%2C0%2C1%2C101.1%2C84ZM18.8%2C84a6.10894%2C6.10894%2C0%2C0%2C1-.8-3V39a5.83049%2C5.83049%2C0%2C0%2C1%2C.8-3l24%2C24ZM99%2C33.8%2C66.9%2C65.9A9.353%2C9.353%2C0%2C0%2C1%2C60%2C68.5a9.353%2C9.353%2C0%2C0%2C1-6.9-2.6L21%2C33.8a6.10894%2C6.10894%2C0%2C0%2C1%2C3-.8H96A6.10862%2C6.10862%2C0%2C0%2C1%2C99%2C33.8Z%22%2F%3E%3C%2Fsvg%3E" alt="Email">
+                    </div>
+                </div>
+                <div class="form">
+                    <form>
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="tel" placeholder="Enter your phone number">
+                        <input type="email" placeholder="Enter your email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </br>
+    </br>
+</br>
+</br>
+    </div>
+
+    <header>
+        <nav>
+            <div class="copyright">© 2024 Vineeth Kamath. All Rights Reserved.</div>
+            <br>
+            <br>    
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E" alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+
+
+    

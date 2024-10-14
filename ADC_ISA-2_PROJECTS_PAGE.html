@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Vineeth Kamath - Photography Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .roboto-thin {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .roboto-light {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .roboto-black {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .roboto-thin-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .roboto-light-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .roboto-regular-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .roboto-medium-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .roboto-bold-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .roboto-black-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+
+
+
+
+        body {
+            font-family: 'Lucida Sans';
+            margin: 0;
+            background-color: #0C0E0E;
+            color: #FBF1E1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            padding: 30px 100px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 50px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #FBF1E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .menu a.active {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #FBF1E1;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 100px;
+            padding: 10px;
+        }
+
+
+
+
+
+        .nav-container {
+            background-color: #222;
+            border-radius: 50px;
+            padding: 10px;
+            display: flex;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-left: 400px;
+            margin-right: 400px;
+            background-image: url('https://i.ibb.co/yP3NwSJ/Background-Image.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            position: relative;
+
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #0C0E0E;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: #5D5D5D;
+
+        }
+
+        .nav-item.active {
+            background-color: #f0e6d9;
+            color: #222;
+        }
+
+        .nav-item:not(.active):hover {
+            background-color: #f0e6d9;
+        }
+
+
+
+
+
+        .projects {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 70px 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 1px;
+        }
+
+        .project {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 450px;
+            height: 350px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .project:hover img {
+            filter: blur(5px) brightness(30%);
+        }
+
+        .project-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #FBF1E1;
+        }
+
+        .project:hover .project-content {
+            opacity: 1;
+        }
+
+        .project-title {
+            font-size: 25px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .project-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .project-info i {
+            margin-right: 5px;
+        }
+
+        .project-description {
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vineeth Kamath</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="index.html">About</a>
+                <a href="ADC_ISA-2_PROJECTS_PAGE.html" class="active">Projects</a>
+                <a href="ADC_ISA-2_PHOTOGRAPHY_PAGE.html">Photography</a>
+                <a href="ADC_ISA-2_CONTACT_PAGE.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E"
+                    alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
+                    alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    <nav class="nav-container">
+        <a href="#" class="nav-item active">All</a>
+        <a href="#" class="nav-item">App Design</a>
+        <a href="#" class="nav-item">Web Design</a>
+        <a href="#" class="nav-item">Game Design</a>
+        <a href="#" class="nav-item">Service Design</a>
+    </nav>
+
+
+
+    <div class="projects">
+        <div class="project servicedesign">
+            <img src="https://i.pinimg.com/736x/b0/8e/1b/b08e1bb10d6cde8355cf96ed7251b1ad.jpg"
+                alt="Service Pitch project image">
+            <div class="project-content">
+                <div class="project-title">Service Pitch</div>
+                <div class="project-info">
+                    <span><i class="far fa-clock"></i> 17:22 13th Sep 2024</span>
+                    <span><i class="far fa-user"></i> Vineeth Kamath</span>
+                </div>
+                <div class="project-description">Lorem ipsum dolor set amet, some dummy content...</div>
+            </div>
+        </div>
+        <div class="project appdesign">
+            <img src="https://i.pinimg.com/736x/1a/26/64/1a266457a84178285bb9e5a7b10db70d.jpg"
+                alt="UiUx Case Study ClubConnect">
+            <div class="project-content">
+                <div class="project-title">UiUx Case Study - ClubConnect</div>
+                <div class="project-info">
+                    <span><i class="far fa-clock"></i> 09:45 3rd May 2024</span>
+                    <span><i class="far fa-user"></i> Vineeth Kamath</span>
+                </div>
+                <div class="project-description">Lorem ipsum dolor set amet, some dummy content...</div>
+            </div>
+        </div>
+        <div class="project webdesign">
+            <img src="https://i.pinimg.com/736x/cc/4f/22/cc4f22dabfdd2d31260b5305d49979c9.jpg"
+                alt="Usability Case Study Duolingo">
+            <div class="project-content">
+                <div class="project-title">Usability Case Study - Duolingo</div>
+                <div class="project-info">
+                    <span><i class="far fa-clock"></i> 14:30 03rd May 2024</span>
+                    <span><i class="far fa-user"></i> Vineeth Kamath</span>
+                </div>
+                <div class="project-description">Lorem ipsum dolor set amet, some dummy content...</div>
+            </div>
+        </div>
+        <div class="project appdesign">
+            <img src="https://i.pinimg.com/736x/2b/1f/53/2b1f539204a9eabf8c18e03316c49041.jpg"
+                alt="Another UiUx Case Study">
+            <div class="project-content">
+                <div class="project-title">FlameWise</div>
+                <div class="project-info">
+                    <span><i class="far fa-clock"></i> 11:59 4th Oct 2024</span>
+                    <span><i class="far fa-user"></i> Vineeth Kamath</span>
+                </div>
+                <div class="project-description">Lorem ipsum dolor set amet, some dummy content...</div>
+            </div>
+        </div>
+        <div class="project gamedesign">
+            <img src="https://i.pinimg.com/736x/5e/ff/17/5eff174fc3c238ebc1f702dbde49c244.jpg"
+                alt="Usability Case Study Duolingo">
+            <div class="project-content">
+                <div class="project-title">Kurukshetra</div>
+                <div class="project-info">
+                    <span><i class="far fa-clock"></i> 14:30 03rd May 2024</span>
+                    <span><i class="far fa-user"></i> Vineeth Kamath</span>
+                </div>
+                <div class="project-description">Lorem ipsum dolor set amet, some dummy content...</div>
+            </div>
+        </div>
+        <div class="project appdesign">
+            <img src="https://i.pinimg.com/736x/fc/b0/90/fcb090076390019645c357be68c26639.jpg"
+                alt="Another UiUx Case Study">
+            <div class="project-content">
+                <div class="project-title">DoorSync</div>
+                <div class="project-info">
+                    <span><i class="far fa-clock"></i> 11:59 4th Oct 2024</span>
+                    <span><i class="far fa-user"></i> Vineeth Kamath</span>
+                </div>
+                <div class="project-description">Lorem ipsum dolor set amet, some dummy content...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get all navigation items and project elements
+        const navItems = document.querySelectorAll(".nav-item");
+        const projects = document.querySelectorAll(".project");
+
+        // Add click event listener to each nav item
+        navItems.forEach(navItem => {
+            navItem.addEventListener("click", () => {
+                // Remove the active class from all nav items
+                navItems.forEach(item => item.classList.remove("active"));
+                // Add the active class to the clicked nav item
+                navItem.classList.add("active");
+
+                // Get the category from the clicked nav item
+                const category = navItem.textContent.toLowerCase().replace(" ", "");
+
+                // Show/hide projects based on the selected category
+                projects.forEach(project => {
+                    // If the category is "all", show all projects
+                    if (category === "all") {
+                        project.style.display = "block";
+                    } else if (project.classList.contains(category)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            });
+        });
+
+
+    </script>
+
+
+    <header>
+        <nav>
+            <div class="copyright">© 2024 Vineeth Kamath. All Rights Reserved.</div>
+            <br>
+            <br>
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E"
+                    alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
+                    alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+</body>

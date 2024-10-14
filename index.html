@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineeth Kamath - Photography Portfolio</title>
+
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .roboto-thin {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .roboto-light {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .roboto-black {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .roboto-thin-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+        .roboto-light-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .roboto-regular-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .roboto-medium-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .roboto-bold-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .roboto-black-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+
+        body {
+            font-family:'Lucida Sans';
+            margin: 0;
+            padding: 0;
+            background-color: #0C0E0E;
+            color: #FBF1E1;
+        }
+        header {
+            padding: 30px 100px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #FBF1E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .menu a.active {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #FBF1E1;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+
+
+        .quote {
+            text-align: center;
+            padding: 100px 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .quote q {
+            font-size: 60px;
+            font-style: normal;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .quote cite {
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+            margin-top: 50px;
+        }
+        .text-content {
+            flex: 1;
+            padding-right: 30px;
+            padding-left: 30px;
+            color: #FBF1E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .image-content {
+            flex: 1;
+        }
+        .image-content img {
+            width: 100%;
+            border-radius: 15px;
+            height: 400px;
+        }
+        h2 {
+            color: #FBF1E1;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+
+        h2 {
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .subscribe-form input[type="email"] {
+            flex-grow: 1;
+            padding: 10px 15px;
+            border: 1px solid #333;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 7px
+        }
+        .subscribe-form input[type="email"]::placeholder {
+            color: #666;
+        }
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #f0e6d9;
+            color: #0f0f0f;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 7px;
+        }
+        .subscribe-form button:hover {
+            background-color: #e0d6c9;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vineeth Kamath</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="index.html" class="active">About</a>
+                <a href="ADC_ISA-2_PROJECTS_PAGE.html">Projects</a>
+                <a href="ADC_ISA-2_PHOTOGRAPHY_PAGE.html">Photography</a>
+                <a href="ADC_ISA-2_CONTACT_PAGE.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E" alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="quote">
+            <q>Remember that customers don’t care about your ideas; <br> they care about whether you can solve their problems</q>
+            — Noah Kagan, Million Dollar Weekend
+        </div>
+    </main>
+
+
+    <div class="container">
+        <div class="content">
+            <div class="text-content">
+                <h2>Figuring out – Discovery</h2>
+                <p>As a student, I found myself exploring a path in accountancy during my secondary grades, but deep down, I knew something was missing. While numbers and finances intrigued me, my heart always gravitated towards creativity. I felt a pull towards design and art—something that allowed me to express myself and make an impact.</p>
+                <p>I wanted to pursue something meaningful, something worth dedicating my life to. It wasn't just about finding a career; it was about choosing a path that aligned with my desire for purpose and creativity.</p>
+            </div>
+            <div class="image-content">
+                <img src="https://i.pinimg.com/736x/16/38/db/1638dbcc092fb1dca01e2e176b07bfac.jpg" alt="Night scene with a vehicle and power lines">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="content">
+            <div class="image-content">
+                <img src="https://i.pinimg.com/736x/c7/6e/5c/c76e5c83c08d3bbea4fc3987b6ce4112.jpg" alt="Night scene with a vehicle and power lines">
+            </div>
+            <div class="text-content">
+                <h2>Stories Through the Lens</h2>
+                <p>My journey into creativity didn’t stop with design and art—I also discovered a passion for photography. Capturing moments through the lens allows me to see the world from new perspectives and preserve stories in a single frame. Photography gives me a sense of freedom and connection, letting me explore and express myself in ways beyond words. It's become a way for me to blend my love for art with the beauty of everyday life.</p>
+                <p>I wanted to pursue something meaningful, something worth dedicating my life to. It wasn't just about finding a career; it was about choosing a path that aligned with my desire for purpose and creativity.</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="content">
+            <div class="text-content">
+                <h2>Exploration Awaits...</h2>
+                <p>Travel has woven itself into the fabric of my life, each journey like a chapter filled with vibrant cultures, stunning landscapes, and untold stories. Every new destination pulls me out of my comfort zone, inviting me to experience the world through different eyes. With every adventure, I find inspiration for my creative pursuits, collecting moments and memories that shape not only my art but also my view of life. To me, travel is more than just movement—it’s a journey of discovery, a chance to turn the ordinary into the extraordinary.</p>
+            </div>
+            <div class="image-content">
+                <img src="https://i.pinimg.com/736x/eb/22/13/eb22132672ea672a583198e129197ceb.jpg" alt="Night scene with a vehicle and power lines">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <h1>SUBSCRIBE FOR UPDATES</h1>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+    <header>
+        <nav>
+            <div class="copyright">© 2024 Vineeth Kamath. All Rights Reserved.</div>
+            <br>
+            <br>    
+            <div class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Behance%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22%234175fa%22%20rx%3D%2215%25%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m346.12%20211.86c-73.376%200-73.471%2073.1-73.471%2073.476%200%200-5.027%2073.191%2073.471%2073.191%200%200%2065.465%203.722%2065.465-50.938h-33.615s1.114%2020.578-30.731%2020.578c0%200-33.616%202.237-33.616-33.244h99.081s10.896-83.063-66.584-83.063zm-32.873%2057.454s4.099-29.427%2033.62-29.427c29.613%200%2029.146%2029.427%2029.146%2029.427h-62.766zm-83.987-18.807s29.146-2.142%2029.146-36.41c0-34.173-23.838-50.938-54.103-50.938h-99.551v191.36h99.542s60.81%201.866%2060.81-56.521c5e-3%200%202.613-47.491-35.844-47.491zm-80.645-53.361h55.684s13.504%200%2013.504%2019.926-7.916%2022.815-16.95%2022.815h-52.238v-42.741zm52.894%20123.39h-52.894v-51.218h55.684s20.211-0.186%2020.116%2026.352c0%2022.353-14.99%2024.68-22.906%2024.866zm103.45-146.1v23.562h78.969v-23.562h-78.969z%22%2F%3E%3C%2Fsvg%3E" alt="Behance">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </div>
+        </nav>
+    </header>
+
+    
+
+</body>
+</html>
+
+
+
